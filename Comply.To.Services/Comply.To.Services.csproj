@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<nullable>enable</nullable>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<LangVersion>10.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<LangVersion>10.0</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Interfaces\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Interfaces\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Comply.To.Domain\Comply.To.Domain.csproj" />
+	</ItemGroup>
+</Project>
